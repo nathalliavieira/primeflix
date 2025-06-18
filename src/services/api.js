@@ -1,5 +1,5 @@
 //  base da url: https://api.themoviedb.org/3/
-//ULR da API: /movie/now_playing?api_key=c34fa18945cd0b82058906878b8baaf3
+//ULR da API: /movie/now_playing?api_key=
 
 import axios from "axios";
 
