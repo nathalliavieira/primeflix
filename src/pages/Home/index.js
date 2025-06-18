@@ -3,7 +3,7 @@ import api from "../../services/api";
 import { Link } from "react-router-dom";
 import "./home.css";
 
-///movie/now_playing?api_key=c34fa18945cd0b82058906878b8baaf3
+///movie/now_playing?api_key=
 
 function Home(){
     const [filmes, setFilmes] = useState([]);
@@ -13,7 +13,7 @@ function Home(){
         async function loadFilmes() {
             const response = await api.get("movie/now_playing",{
                 params:{
-                    api_key: process.env.API_KEY
+                    api_key: process.env.NEXT_PUBLIC_API_KEY
                 }
             })
 
