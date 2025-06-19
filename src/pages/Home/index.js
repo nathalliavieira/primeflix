@@ -10,12 +10,11 @@ function Home(){
     const [loading, setLoading] = useState(true);
 
     useEffect(()=>{
-        console.log("API KEY em produção:", process.env.NEXT_PUBLIC_API_KEY);
         
         async function loadFilmes() {
             const response = await api.get("movie/now_playing",{
                 params:{
-                    api_key: process.env.NEXT_PUBLIC_API_KEY
+                    api_key: process.env.REACT_APP_API_KEY
                 }
             })
 
